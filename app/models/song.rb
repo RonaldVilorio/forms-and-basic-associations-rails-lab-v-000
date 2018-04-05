@@ -12,7 +12,6 @@ class Song < ActiveRecord::Base
     end
   end
   def note_contents=(ids)
-
     note = Note.find_or_create_by(id)
     self.notes << note
   end
