@@ -14,7 +14,6 @@ class Song < ActiveRecord::Base
   def note_ids=(id)
     note = Note.find(id)
     self.notes << note
-    end
   end
 
   def genre_name=(id)
