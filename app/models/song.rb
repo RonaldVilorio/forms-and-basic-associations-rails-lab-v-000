@@ -12,6 +12,7 @@ class Song < ActiveRecord::Base
     end
   end
   def note_ids=(ids)
+    binding.pry
     note = Note.find_or_create_by(id)
     self.notes << note
   end
