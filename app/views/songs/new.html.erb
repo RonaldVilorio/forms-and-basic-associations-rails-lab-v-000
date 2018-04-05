@@ -8,7 +8,7 @@
   <%= f.text_field :artist_name %>
   <br />
 
-  <%= f.collection_select :genre_name, Genre.all, :id, :name, prompt: true%>
+  <%= f.collection_select :genre, Genre.all, :id, :name, prompt: true%>
 
   <br />
   <h3>Notes</h3>
