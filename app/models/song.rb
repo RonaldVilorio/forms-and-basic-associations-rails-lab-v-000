@@ -11,12 +11,7 @@ class Song < ActiveRecord::Base
       self.artist.name
     end
   end
-  def note_contents=(ids)
-    ids.each do |id|
-      note = Note.find_or_create_by(id)
-      self.notes << note
-    end
-  end
+
 
   def genre_name=(id)
     self.genre = Genre.find_by(id: id)
